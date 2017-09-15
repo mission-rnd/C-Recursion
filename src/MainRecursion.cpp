@@ -1,3 +1,7 @@
+/*
+Author : Abhijith Ravuri
+*/
+
 #include "stdafx.h"
 #include <stdlib.h>
 
