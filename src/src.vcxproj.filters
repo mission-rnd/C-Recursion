@@ -50,5 +50,11 @@
     <ClCompile Include="NSnipers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pillars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RopeStudents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

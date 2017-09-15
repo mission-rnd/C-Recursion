@@ -84,6 +84,8 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CountPairsSpec.cpp" />
     <ClCompile Include="MazeSpec.cpp" />
+    <ClCompile Include="PillarsSpec.cpp" />
+    <ClCompile Include="RopeStudentsSpec.cpp" />
     <ClCompile Include="SpiralSpec.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

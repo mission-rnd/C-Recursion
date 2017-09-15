@@ -84,10 +84,12 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="RopeStudents.cpp" />
     <ClCompile Include="CountPairs.cpp" />
     <ClCompile Include="MainRecursion.cpp" />
     <ClCompile Include="Maze.cpp" />
     <ClCompile Include="NSnipers.cpp" />
+    <ClCompile Include="Pillars.cpp" />
     <ClCompile Include="Spiral.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
