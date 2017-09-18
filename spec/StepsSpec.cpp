@@ -61,7 +61,7 @@ namespace spec
 		{
 			int n = 0;
 			int result = get_steps(0);
-			Assert::AreEqual(0, 0, L"0 should be 0", 1, 2);
+			Assert::AreEqual(0, result, L"0 should be 0", 1, 2);
 		}
 		[TestMethod, Timeout(3000)]
 		void OneSteps()

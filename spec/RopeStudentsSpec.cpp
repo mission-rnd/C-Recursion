@@ -134,7 +134,7 @@ namespace spec
 		void Hidden1_Problem5()
 		{
 			char students[100] = "ABXXCXXXXXXXX";
-			int expectedMinBallDistance = 3;
+			int expectedMinBallDistance = 1;
 			int expectedMaxBallDistance = 3;
 			createFormationAndTest(students, expectedMaxBallDistance, expectedMinBallDistance);
 
