@@ -58,7 +58,7 @@ namespace spec
 				}
 			}
 			else{
-				Assert::AreEqual(jc, jc_exp, L"Failed Jump Count case in Pillars", 1, 2);
+				Assert::AreEqual(jc_exp, jc, L"Failed Jump Count case in Pillars", 1, 2);
 				if (jc == jc_exp){
 					int flag = compare_arrays_pillars_spec(res, maxpath_exp, jc_exp + 1);
 					Assert::AreEqual(1, flag, L"Failed Max jump path in Pillars", 1, 2);
@@ -265,7 +265,7 @@ namespace spec
 				{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, };
 			const int jc_exp = 0;
 			int maxpath_exp[jc_exp + 1] = { 1 };
-			testPillars_spec(&blocks[0][0], n, m, maxpath_exp, jc_exp, nopath);
+			testPillars_spec(&blocks[0][0], m,n, maxpath_exp, jc_exp, nopath);
 		};
 		[TestMethod, Timeout(1000)]
 		void Real12_Pillars()
@@ -275,7 +275,7 @@ namespace spec
 			int blocks[m][n] = { { 1, 2 } };
 			const int jc_exp = 1;
 			int maxpath_exp[jc_exp + 1] = { 1, 2 };
-			testPillars_spec(&blocks[0][0], n, m, maxpath_exp, jc_exp, nopath);
+			testPillars_spec(&blocks[0][0], m, n, maxpath_exp, jc_exp, nopath);
 		};
 		[TestMethod, Timeout(1000)]
 		void Real13_Pillars()
@@ -294,7 +294,7 @@ namespace spec
 				{ 7, 7, 7, 7, 7, 0, 0, 0, 0, 0 }, };
 			const int jc_exp = 15;
 			int maxpath_exp[jc_exp + 1] = { 3, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 30, 40, 50 };
-			testPillars_spec(&blocks[0][0], n, m, maxpath_exp, jc_exp, nopath);
+			testPillars_spec(&blocks[0][0], m, n, maxpath_exp, jc_exp, nopath);
 		};
 		[TestMethod, Timeout(1000)]
 		void Real14_Pillars()
@@ -313,7 +313,7 @@ namespace spec
 				{ 7, 7, 7, 7, 7, 0, 0, 0, 0, 0 }, };
 			const int jc_exp = 15;
 			int maxpath_exp[jc_exp + 1] = { 3, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 30, 40, 50 };
-			testPillars_spec(&blocks[0][0], n, m, maxpath_exp, jc_exp, nopath);
+			testPillars_spec(&blocks[0][0], m, n, maxpath_exp, jc_exp, nopath);
 		};
 		[TestMethod, Timeout(1000)]
 		void Real15_Pillars()
@@ -332,7 +332,7 @@ namespace spec
 				{ 7, 7, 7, 7, 7, 0, 0, 0, 0, 0 }, };
 			const int jc_exp = 15;
 			int maxpath_exp[jc_exp + 1] = { 3, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 30, 40, 50 };
-			testPillars_spec(&blocks[0][0], n, m, maxpath_exp, jc_exp, nopath);
+			testPillars_spec(&blocks[0][0], m,n, maxpath_exp, jc_exp, nopath);
 		};
 		[TestMethod, Timeout(1000)]
 		void Real16_Pillars()
@@ -352,7 +352,7 @@ namespace spec
 				{ 4 } };
 			const int jc_exp = 4;
 			int maxpath_exp[jc_exp + 1] = { 1, 2, 3, 4, 5 };
-			testPillars_spec(&blocks[0][0], n, m, maxpath_exp, jc_exp, nopath);
+			testPillars_spec(&blocks[0][0], m,n, maxpath_exp, jc_exp, nopath);
 		};
 		[TestMethod, Timeout(1000)]
 		void Real17_Pillars()
